@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Builds the RoomMonitor Program
+
+gcc dht11Driver/common_dht_read.c dht11Driver/bbb_mmio.c dht11Driver/bbb_dht_read.c roomMonitor.c -o roomMonitor -lrt -std=gnu99
