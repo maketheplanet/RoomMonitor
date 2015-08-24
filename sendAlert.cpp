@@ -23,7 +23,7 @@ int main(){
 	if(temperature > 0){
 		tempF=(temperature*9)/5+32;
 	}
-	if(tempF > 75){
+	if(tempF > 80){
 		command << "./roomMonitor | mail -s \"" << subject <<"\" " << to;
 		int result = system(command.str().c_str());
 	}
