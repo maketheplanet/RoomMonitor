@@ -3,3 +3,5 @@
 # Builds the RoomMonitor Program
 
 gcc dht11Driver/common_dht_read.c dht11Driver/bbb_mmio.c dht11Driver/bbb_dht_read.c roomMonitor.c -o roomMonitor -lrt -std=gnu99
+g++ -c sendAlert.cpp
+g++ -o sendAlert sendAlert.o dht11Driver/common_dht_read.o dht11Driver/bbb_mmio.o dht11Driver/bbb_dht_read.o -lrt
